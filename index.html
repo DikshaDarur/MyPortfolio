@@ -1,12 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diksha Mallikarjun Darur — Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="profile.png" />
   </head>
-  <body class="antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="nav-logo">Diksha Darur</div>
+        <nav class="nav-links" id="main-nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-toggle" id="nav-toggle">☰</div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-layout">
+          <div class="hero-text">
+            <h1>Diksha Mallikarjun Darur</h1>
+            <h2>Aspiring Software Engineer | Web Developer | Problem Solver.</h2>
+            <p>I build user-friendly web applications and enjoy solving algorithmic problems.</p>
+            <div class="hero-actions">
+              <a href="https://github.com/DikshaDarur" target="_blank" class="btn">GitHub</a>
+              <a href="https://www.linkedin.com/in/dikshadarur" target="_blank" class="btn">LinkedIn</a>
+              <a href="#contact" class="btn">Contact</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="profile.png" alt="Diksha Mallikarjun Darur" class="profile-professional" />
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="section about" id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            I am <strong>Diksha Mallikarjun Darur</strong>, a passionate and curious
+            <strong>Computer Science Engineering student</strong> from
+            SDM College of Engineering and Technology, Dharwad.<br>
+            I enjoy exploring technology, especially <strong>web development</strong> and
+            <strong>problem-solving</strong>. I love turning creative ideas into responsive,
+            user-friendly web applications that make life simpler and smarter.<br>
+            My goal is to grow into a <strong>versatile software engineer</strong> who writes
+            clean, efficient, and meaningful code while continuously learning and innovating.
+          </p>
+          <!-- Education -->
+          <div class="about-sub about-edu">
+            <h3>Education</h3>
+            <div class="edu-list">
+              <div class="edu-item">
+                <span class="edu-degree">B.E. in Computer Science Engineering</span>
+                <span class="edu-college">SDM College of Engineering &amp; Technology, Dharwad</span>
+                <span class="edu-score">CGPA: 9.59</span>
+              </div>
+              <div class="edu-item">
+                <span class="edu-degree">PUC (Science)</span>
+                <span class="edu-college">Terdal Science PU College, Athani</span>
+                <span class="edu-score">Percentage: 95.33%</span>
+              </div>
+              <div class="edu-item">
+                <span class="edu-degree">SSLC</span>
+                <span class="edu-college">Sri M S V Vidya Peeta, Athani</span>
+                <span class="edu-score">Percentage: 96.8%</span>
+              </div>
+            </div>
+          </div>
+          <!-- Certifications -->
+          <div class="about-sub about-certs">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li><a href="https://www.credly.com/badges/3deac087-e1e3-4060-9b5b-71d81f31363a/public_url" target="_blank">Python Essential 1</a></li>
+              <li><a href="https://www.credly.com/badges/5b7b0bd7-d702-447a-ab29-15c1c600a83c/public_url" target="_blank">Python Essential 2</a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/JJKRSZBRCV6J" target="_blank">Introduction to Cyber Security</a></li>
+            </ul>
+          </div>
+          <!-- Achievements -->
+          <div class="about-sub about-achieve">
+            <h3>Achievements</h3>
+            <ul class="achieve-list">
+              <li>1st Place — Department Hackathon (Computer Engineering)</li>
+              <li>2nd Place — Automata Event, Insignia College Fest</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section class="section projects" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>ExploreNow — Travel Agency Web App</h3>
+              <p>A full-stack travel booking platform supporting user authentication and dynamic package booking. Built with PHP &amp; MySQL backend, and responsive front-end using HTML, CSS, and JavaScript.</p>
+              <a href="https://github.com/DikshaDarur" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section class="section skills" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <div>
+              <h4>Technical</h4>
+              <div class="tags">
+                <span>C</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>SQL/MySQL</span>
+                <span>Git</span>
+              </div>
+            </div>
+            <div>
+              <h4>Soft Skills</h4>
+              <div class="tags">
+                <span>Teamwork</span>
+                <span>Communication</span>
+                <span>Detail-Oriented</span>
+                <span>Quick Learner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="container footer-flex">
+        <div>
+          <div class="footer-name">Diksha Mallikarjun Darur</div>
+          <div class="footer-role">Computer Science Engineering Student</div>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:dikshadarur@gmail.com">Email</a>
+          <a href="https://github.com/DikshaDarur" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/dikshadarur" target="_blank">LinkedIn</a>
+          <a href="https://drive.google.com/uc?export=download&id=14LdCYa5gL2o53Uw3uLfyFiWz5FqqKIKf"
+            target="_blank">Download Resume</a>
+        </div>
+      </div>
+      <div class="footer-copy">&copy; <span id="year"></span> Diksha Mallikarjun Darur</div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
